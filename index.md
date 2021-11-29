@@ -20,7 +20,7 @@ The C7-Game team have reached the first development milestone, Aztec. This is a 
 - [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/untagged-ffba0e0b13067151eed6/C7-Aztec-Linux.tgz)
 - [Mac](https://github.com/C7-Game/Prototype/releases/download/untagged-ffba0e0b13067151eed6/C7-Aztec-Mac.zip)
 
-#### Windows Installation
+##### Windows Installation
 
 This is a Windows 64-bit executrable and requires 64-bit windows and a Civilization III installation to be present on the computer for access to media files. C7 will find this install in the Windows registry automatically.
 
@@ -32,7 +32,7 @@ This is a Windows 64-bit executrable and requires 64-bit windows and a Civilizat
   - Check the "Unblock" checkbox near the bottom buttons in the "Security" section
   - Click OK
 
-#### Linux Installation
+##### Linux Installation
 
 This is an x86-64 Linux executable, and it requires media files from a Civilization III installation. We devs just copy the top-level "Sid Meier's Civilization III Complete" ("Complete may not be there if your install was from pre-Complete CDs, but that's OK) folder and its contents to our Linux machine.
 
@@ -40,7 +40,7 @@ This is an x86-64 Linux executable, and it requires media files from a Civilizat
 - Set the CIV3_HOME environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
 - Run C7.x86_64
 
-#### Mac Installation
+##### Mac Installation
 
 This is a universal 64-bit executable, so it should run on both Intel and M1 Macs, and it requires media files from a Civilization III installation. We devs just copy the top-level "Sid Meier's Civilization III Complete" ("Complete may not be there if your install was from pre-Complete CDs, but that's OK) folder and its contents to our Mac.
 
@@ -56,8 +56,8 @@ This is a universal 64-bit executable, so it should run on both Intel and M1 Mac
 #### Known issues
 
 - It relies on having a Civilization III install on the machine and knowing where it is (via Windows registry or via CIV3_HOME environment variable)
-- This is more of a progress demonstrator and an early peek at the game and is not a fully functioning game
-- There are many UI buttons displayed but don't do anything (but some do!)
+- This is more of a progress demonstraton and an early peek at the game and is not a fully functioning game
+- Not all UI buttons perform an action
 - There is very little exception handling, so crashes to desktop may happen
 - Audio may cut off very quickly in some situations or not play at all
 - For Windows you may have to unblock the downloaded executable
