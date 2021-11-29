@@ -16,9 +16,9 @@ date:   2021-11-27 18:25:00 -0800
 
 The C7-Game team have reached the first development milestone, Aztec. This is a pre-release-quality build. It requires media files from Civilization III to be present to do anything interesting. It can "start a new game" and show a zoomable, scrollable map and some units, and it responds to some of the controls, in some ways mocking turn-taking, although nothing moves.
 
-- [Windows](https://github.com/C7-Game/Prototype/releases/download/untagged-ffba0e0b13067151eed6/C7-Aztec-Windows.zip)
-- [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/untagged-ffba0e0b13067151eed6/C7-Aztec-Linux.tgz)
-- [Mac](https://github.com/C7-Game/Prototype/releases/download/untagged-ffba0e0b13067151eed6/C7-Aztec-Mac.zip)
+- [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.0-aztec/C7-Aztec-Windows.zip)
+- [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/v0.0-aztec/C7-Aztec-Linux.tgz)
+- [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.0-aztec/C7-Aztec-Mac.zip)
 
 ##### Windows Installation
 
