@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  C7 Game Home Page
-date:   2021-11-27 18:25:00 -0800
+date:   2022-03-23 18:25:00 -0800
 ---
 # C7 Game
 
@@ -28,6 +28,14 @@ New features in Babylon:
 Thus, there is a game to be had with the Babylon release - can you outclass the AI in effectively settling your home continent?
 
 Media files from Civilization III are still required in this milestone.
+
+##### Download Babylon
+
+* [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.1-babylon/C7_0.1-Babylon-Windows.zip)
+* [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.1-babylon/C7_0.1-Babylon-Mac.zip)
+* [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/v0.1-babylon/C7_0.1-Babylon-Linux-x86_64.zip)
+
+All official releases of C7 can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
 
 ##### Windows Installation
 
