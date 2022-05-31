@@ -11,21 +11,19 @@ date:   2022-03-23 18:25:00 -0800
 ## Downloads
 
 
-##### v0.1 Babylon Has Been Released!
+##### v0.2 Carthage Preview 1 Has Been Released!
 
-The C7 team has reached the second development milestone, Babylon. 
+The C7 team has released the first preview of the "Carthage" milestone.  This is a general enhancement over the "Babylon" release, and recommended for all newcomers.
 
-New features in Babylon:
+New features in this preview:
 
-- Significant map improvements.  Hills, forests, marshes, rivers, and resources all appear on the map.
-- Cities now auto-produce units, allowing you to expand throughout your landmass.
-- There is now a very basic AI, which will also have auto-produced units, and will attempt to settle its entire starting landmass.
-- Barbarians now exist to make your life more difficult, and they will periodically send out Warriors.
-- There is now combat, including unit animations of the combat.
-- We have our first custom art, on the main menu, and the main menu plays background music.
-- Many BIQ and SAV files can be loaded (although only the map part is processed, and many don't load yet either).
+- A right-click menu allows you to select units from a stack, or change city production
+- C7-native JSON files can be loaded to start a game
+- Units can be moved with the mouse via the Go To button, or via the arrow keys/fn+arrow keys (for diagonal movement), in addition to via the Num Pad
+- The AI now has a concept of tile visibility, and uses explorers to reveal tiles (the human can still see all tiles)
+- Polish has been added to the unit animation and lower-right info box
 
-Thus, there is a game to be had with the Babylon release - can you outclass the AI in effectively settling your home continent?
+You'll also now be playing as the Carthaginians, and the Romans have been added to the map to provide you with a proper rival.
 
 Media files from Civilization III are still required in this milestone.
 
