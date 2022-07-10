@@ -1,17 +1,18 @@
 ---
 layout: page
 title:  C7 Game Home Page
-date:   2022-03-23 18:25:00 -0800
+date:   2022-07-09 18:25:00 -0800
 ---
-# C7 Game
+# About C7
+C7 (working title) is an in-development 4X strategy game built with Godot and C#, with a historical focus inspired by games such as _Civilization_, _Galactic Civilizations_, and _Humankind_. We aim to create a new game that looks and plays like classic Civ but incorporates features from the best of the genre and our own dreams.
 
-- [Discussion Forum](https://forums.civfanatics.com/forums/civ3-future-development.604/)
-- [Open source GitHub project](https://github.com/C7-Game/Prototype)
+- [CivFanatics subforum](https://forums.civfanatics.com/forums/civ3-future-development.604/)
+- [GitHub](https://github.com/C7-Game/Prototype)
+- [Discord](https://discord.gg/uwxUuWhM89)
 
-## Downloads
+# Get C7 Carthage
 
-
-##### v0.2 Carthage Preview 1 Has Been Released!
+## v0.2 Carthage Preview 1 Has Been Released!
 
 The C7 team has released the first preview of the "Carthage" milestone.  This is a general enhancement over the "Babylon" release, and recommended for all newcomers.
 
@@ -25,17 +26,19 @@ New features in this preview:
 
 You'll also now be playing as the Carthaginians, and the Romans have been added to the map to provide you with a proper rival.
 
-Media files from Civilization III are still required in this milestone.
+Media files from _Civilization III_ are still required in this milestone.
 
-##### Download Babylon
+### Download Carthage Preview 1
 
-* [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.1-babylon/C7_0.1-Babylon-Windows.zip)
-* [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.1-babylon/C7_0.1-Babylon-Mac.zip)
-* [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/v0.1-babylon/C7_0.1-Babylon-Linux-x86_64.zip)
+* [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-1/C7Carthage_Preview_1-Windows.zip)
+* [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-1/C7Carthage_Preview_1-Mac.zip)
+* [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-1/C7Carthage_Preview_1-Linux-x86_64.zip)
 
-All official releases of C7 can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
+All official releases of C7 along with more detailed release notes can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
 
-##### Windows Installation
+## Installation
+
+### Windows Installation
 
 This is a Windows 64-bit executable and requires 64-bit windows and a Civilization III installation to be present on the computer for access to media files. C7 will find this install in the Windows registry automatically.
 
@@ -47,7 +50,7 @@ This is a Windows 64-bit executable and requires 64-bit windows and a Civilizati
   - Check the "Unblock" checkbox near the bottom buttons in the "Security" section
   - Click OK
 
-##### Linux Installation
+### Linux Installation
 
 This is an x86-64 Linux executable, and it requires media files from a Civilization III installation. We devs just copy the top-level "Sid Meier's Civilization III Complete" ("Complete may not be there if your install was from pre-Complete CDs, but that's OK) folder and its contents to our Linux machine.
 
@@ -55,7 +58,7 @@ This is an x86-64 Linux executable, and it requires media files from a Civilizat
 - Set the CIV3_HOME environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
 - Run C7.x86_64
 
-##### Mac Installation
+### Mac Installation
 
 This is a universal 64-bit executable, so it should run on both Intel and M1 Macs, and it requires media files from a Civilization III installation. We devs just copy the top-level "Sid Meier's Civilization III Complete" ("Complete may not be there if your install was from pre-Complete CDs, but that's OK) folder and its contents to our Mac.
 
@@ -66,9 +69,9 @@ This is a universal 64-bit executable, so it should run on both Intel and M1 Mac
 - Set the CIV3_HOME environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
 - From that same terminal where you set CIV3_HOME, run C7.app with `open /path/to/C7.app`, or again just type `open ` and drag the C7 icon onto the terminal window and press enter
 
-#### Known issues
+## Known issues
 
-- It relies on having a Civilization III install on the machine and knowing where it is (via Windows registry or via CIV3_HOME environment variable)
+- C7 relies on having a Civilization III install on the machine and knowing where it is (via Windows registry or via CIV3_HOME environment variable, as described in the respective installation instructions)
 - With some BIQ or SAV files, crashes to desktop may happen
 - For Mac:
   - Mac will try hard not to let you run this; it will tell you the app is damaged and can't be opened and helpfully offer to trash it for you. From a terminal you can `xattr -cr /path/to/C7.app` to enable running it.
