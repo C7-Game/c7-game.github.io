@@ -41,7 +41,7 @@ In addition, a large number of behind-the-scenes changes have been made.  Some o
 
 Media files from Civilization III are still required in this milestone.
 
-### Download Carthage Preview 1
+### Download Carthage Preview 2
 
 * [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-2/C7Carthage_Preview_2-Windows.zip)
 * [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-2/C7Carthage_Preview_2-Mac.zip)
