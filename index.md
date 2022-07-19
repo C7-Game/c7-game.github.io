@@ -12,27 +12,40 @@ C7 (working title) is an in-development 4X strategy game built with Godot and C#
 
 # Get C7 Carthage
 
-## v0.2 Carthage Preview 1 Has Been Released!
+## v0.2 Carthage Preview 2 Has Been Released!
 
-The C7 team has released the first preview of the "Carthage" milestone.  This is a general enhancement over the "Babylon" release, and recommended for all newcomers.
+The C7 team has released the second preview of the "Carthage" milestone.  This is a general enhancement over the "Babylon" release, and recommended for all newcomers.
 
-New features in this preview:
+New features and AI improvements in this preview:
 
-- A right-click menu allows you to select units from a stack, or change city production
-- C7-native JSON files can be loaded to start a game
-- Units can be moved with the mouse via the Go To button, or via the arrow keys/fn+arrow keys (for diagonal movement), in addition to via the Num Pad
-- The AI now has a concept of tile visibility, and uses explorers to reveal tiles (the human can still see all tiles)
-- Polish has been added to the unit animation and lower-right info box
+- Significantly more combat mechanics have been added: defensive bombard, retreat probability, terrain + river defensive bonuses, healing while resting, and experience levels/promotions.
+- City production is now based on actual tile yields, e.g. grassland with cows is more valuable than tundra.  The AI will take this into account when deciding where to build their second and subsequent cities.
+- The AI will now decide what to build based on game circumstances, rather than a fixed, unchanging sequence.
+- The AI can now navigate around bays due to improved pathing.
+- The AI now knows how to explore to reveal tiles.  It will only send settlers to areas it has scouted, and will actively use spare units to scout.  This contrasts with preview 1, where the AI moved its units randomly.
+- The AI now can evaluate and set strategic priorities.  For now, these are "expansion", "exploration", and "war", although it will never choose the latter unless it cannot expand or explore any more, as it doesn't yet have a military training module.  These priorities affect what the AI chooses to build, and may change as the game progresses.
+- The AI will now settle cities in CxxC patterns or wider, instead of the infinite city sprawl (ICS) of Preview 1 and earlier.
+- Instead of only mountains forbidding cities, this is now looked up in the scenario configuration.
+- The smoke effect has been added to animations.
 
-You'll also now be playing as the Carthaginians, and the Romans have been added to the map to provide you with a proper rival.
+Bug fixes:
+ - You can no longer select Babylon's units, and clicking on your own will select them
+ - Zooming right after starting a game will no longer take you to a really far-zoomed-out level, but adjust as you might expect
 
-Media files from _Civilization III_ are still required in this milestone.
+In addition, a large number of behind-the-scenes changes have been made.  Some of the less technical ones include:
+
+ - Unit prototypes are now imported and used, instead of dummy unit prototypes
+ - Log files are now created to aid with debugging
+ - Documentation has continued to take significant steps forward, both on GitHub and on CFC threads
+ - Performance improvements around unit pathing have been made so the improved AI navigation won't slow things down too much.
+
+Media files from Civilization III are still required in this milestone.
 
 ### Download Carthage Preview 1
 
-* [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-1/C7Carthage_Preview_1-Windows.zip)
-* [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-1/C7Carthage_Preview_1-Mac.zip)
-* [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-1/C7Carthage_Preview_1-Linux-x86_64.zip)
+* [Windows](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-2/C7Carthage_Preview_2-Windows.zip)
+* [Mac](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-2/C7Carthage_Preview_2-Mac.zip)
+* [Linux x86-64](https://github.com/C7-Game/Prototype/releases/download/v0.2-carthage-preview-2/C7Carthage_Preview_2-Linux-x86_64.zip)
 
 All official releases of C7 along with more detailed release notes can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
 
