@@ -1,87 +1,88 @@
 ---
 layout: page
-title:  C7 Game Home Page
+title:  OpenCiv3 | Home
 date:   2025-01-04 18:25:00 -0800
 ---
-# About C7
-C7 (working title) is an in-development open-source 4X strategy game built with Godot and C#, with a historical focus inspired by games such as _Civilization_, _Galactic Civilizations_, and _Humankind_. We aim to create a new game that looks and plays like classic Civ but incorporates features from the best of the genre and our own dreams.
+# About OpenCiv3
+
+**OpenCiv3** (formerly known by the codename "C7") is an open-source, mod-oriented remake of _Civilization III_ by the fan community built with Godot and C#, with capabilities inspired by other 4X games and lessons learned in Civ3 modding. We aim to create a new game that looks and plays like Civ3 but incorporates features from the best of the genre and our own dreams.
+
+***OpenCiv3 is under active development and currently in an early pre-alpha state.*** It is a rudimentary playable game but lacking many mechanics and late-game content, and errors are likely. Keep up with our development for the latest updates and opportunities to contribute!
+
+## Connect with the community
 
 - [CivFanatics subforum](https://forums.civfanatics.com/forums/civ3-future-development.604/)
-- [GitHub](https://github.com/C7-Game/Prototype)
 - [Discord](https://discord.gg/uwxUuWhM89)
+- [GitHub](https://github.com/C7-Game/Prototype)
 
-# Get C7 Carthage
+> [!NOTE]
+> OpenCiv3 is not affiliated with civfanatics.com,
+> Firaxis Games, Infogrames Interactive,
+> Atari Interactive, or Take-Two Interactive Software.
+> All trademarks are property of their respective owners.
 
-## v0.2 Carthage Has Been Released!
+# Get OpenCiv3 "Dutch"
 
-The C7 team has released the final version of the v0.2 "Carthage" milestone.  This is a major enhancement over the "Babylon" release, and our debut with Godot 4.
+## November 2025: v0.3 Dutch Preview 1 Has Been Released!
 
-New features and improvements in this version include:
+The OpenCiv3 team is pleased to announce the first preview release of the v0.3 "Dutch" milestone.  This is a major enhancement over the "Carthage" release, and our debut with standalone mode featuring placeholder graphics without the need for Civ3 media files. A local installation of Civ3 is still recommended for a more polished experience.
 
-- Ported the game to Godot 4 and .NET
-- New default map playing as Carthage with starting settler & worker
-- Added custom city graphics, and improved city rendering on the map
-- Limited support for loading Civ3 saves and scenarios
-- Show remaining unit movement as fractional numbers
-- Improved unit go-to behavior
-- Added option to change production from city right-click menu
-- Added announcement when a civilization is destroyed
-- Miscellaneous UI improvements
-- Improved detection of Steam Civ3 installation
-- Remember the Civ3 install location when it is set manually
-- Updated game credits
+## Download
 
-Media files from Civilization III are still required in this milestone.
+Download the appropriate zip file for your OS from [the Dutch Preview 1 release](https://github.com/C7-Game/Prototype/releases/tag/v0.3-dutch-preview-1)
 
-### Download Carthage
+All official releases of OpenCiv3 along with more detailed release notes can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
 
-Download the appropriate zip file for your OS from [the release page](https://github.com/C7-Game/Prototype/releases/tag/v0.2-carthage)
-
-All official releases of C7 along with more detailed release notes can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
-
-## Installation
+## Install
 
 ### System Requirements
 
 - 64-bit Windows, Linux, or Mac OS. Other platforms may be supported in future releases.
-- A local copy of Civilization III files (the game does not have to run). This will become optional in future releases.
+- Minimum hardware requirements have not yet been identified. Please let us know if OpenCiv3 does not perform well on your system.
+- Recommended: A local copy of _Civilization III_ files (the game itself does NOT have to run) from _Conquests_ or the _Complete_ edition. Standalone mode is available with placeholder graphics for those who do not have a copy.
+  - _Civilization III Complete_ is available for a pittance from [Steam](https://store.steampowered.com/app/3910/Sid_Meiers_Civilization_III_Complete/) or [GOG](https://www.gog.com/en/game/sid_meiers_civilization_iii_complete)
 
 ### Windows Installation
 
-This is a Windows 64-bit executable and requires 64-bit windows and a Civilization III installation to be present on the computer for access to media files. C7 will find this install in the Windows registry automatically.
+This is a Windows 64-bit executable. OpenCiv3 will look for a local installation of _Civilization III_ in the Windows registry automatically, or you may use an environment variable to point to the files.
 
 - Download and extract the zip file
-- Double-click C7.exe
+- Double-click `OpenCiv3.exe`
 - If it is blocked, you may need to unblock it by
   - Right click
   - Click on Properties
   - Check the "Unblock" checkbox near the bottom buttons in the "Security" section
   - Click OK
-- If your Civilization III installation is not detected, you can set the environment variable `CIV3_HOME` pointing to it and restart C7
+- If your _Civilization III_ installation is not detected, you can set the environment variable `CIV3_HOME` pointing to it and restart OpenCiv3
 
 ### Linux Installation
 
-This is an x86-64 Linux executable, and it requires media files from a Civilization III installation. You can just copy or mount the top-level "Sid Meier's Civilization III Complete" (Sans "Complete" if your install was from pre-Complete CDs) folder and its contents to your Linux machine, or install the game via Steam or GOG.
+This is an x86-64 Linux executable. You may use an environment variable to point to the files from a _Civilization III_ installation. You can just copy or mount the top-level "Sid Meier's Civilization III Complete" (Sans "Complete" if your install was from pre-Complete CDs) folder and its contents to your Linux system, or install the game via Steam or GOG.
 
 - Download and extract the tgz file
-- Set the CIV3_HOME environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
-- From that same terminal where you set CIV3_HOME, run C7.x86_64
+- Set the `CIV3_HOME` environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
+- From that same terminal where you set `CIV3_HOME`, run `OpenCiv3.x86_64`
+- To make this variable permanent, add it to your `.profile` or equivalent.
 
 ### Mac Installation
 
-This is a universal 64-bit executable, so it should run on both Intel and M1 Macs, and it requires media files from a Civilization III installation. You can just copy or mount the top-level "Sid Meier's Civilization III Complete" (Sans "Complete" if your install was from pre-Complete CDs) folder and its contents to your Linux machine, or install the game via Steam or GOG.
+This is a universal 64-bit executable, so it should run on both Intel and M1 Macs. You may use an environment variable to point to the files from a _Civilization III_ installation. You can just copy or mount the top-level "Sid Meier's Civilization III Complete" (Sans "Complete" if your install was from pre-Complete CDs) folder and its contents to your Mac system, or install the game via Steam or GOG.
 
 - Download the zip; it may complain bitterly, and you may have to tell it to keep the download instead of trashing it
-- Double click the zip file, and a folder with C7.app and a json file will appear
-- If you try to open C7.app it will tell you it's damaged and try to trash it; it is not damaged
-- To unblock the downloaded app, from a terminal run `xattr -cr /path/to/C7.app`; you can avoid typing the path out by typing `xattr -cr ` and then dragging the C7.app icon onto the terminal window
-- Set the CIV3_HOME environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
-- From that same terminal where you set CIV3_HOME, run C7.app with `open /path/to/C7.app`, or again just type `open ` and drag the C7 icon onto the terminal window and press enter
+- Double click the zip file, and a folder with `OpenCiv3.app` and a json file will appear
+- If you try to open `OpenCiv3.app` it will tell you it's damaged and try to trash it; it is not damaged
+- To unblock the downloaded app, from a terminal run `xattr -cr /path/to/OpenCiv3.app`; you can avoid typing the path out by typing `xattr -cr ` and then dragging the `OpenCiv3.app` icon onto the terminal window
+- Set the `CIV3_HOME` environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
+- From that same terminal where you set `CIV3_HOME`, run `OpenCiv3.app` with `open /path/to/OpenCiv3.app`, or again just type `open ` and drag the OpenCiv3 icon onto the terminal window and press enter
 
 ## Known issues
 
-- C7 relies on having a Civilization III install on the machine and knowing where it is (via Windows registry or via CIV3_HOME environment variable, as described in the respective installation instructions)
-- With some BIQ or SAV files, crashes to desktop may happen
+- OpenCiv3 uses many primitive placeholder assets; loading files from a local _Civilization III_ install is recommended (see platform specific setup instructions above)
+- Support for playing Civ3 BIQ or SAV files is incomplete; some files will not load correctly and crashes may occur
 - For Mac:
-  - Mac will try hard not to let you run this; it will tell you the app is damaged and can't be opened and helpfully offer to trash it for you. From a terminal you can `xattr -cr /path/to/C7.app` to enable running it.
-  - Mac will crash if you hit buttons to start a new game (New Game, Quick Start, Tutorial, or Load Scenario) because it cant find our 'new game' save file we're using as a stand-in for map generation. But you can Load Game and load the c7-static-map-save.json file or open a Civ3 SAV file to open that map
+  - Mac will try hard not to let you run this; it will tell you the app is damaged and can't be opened and helpfully offer to trash it for you. From a terminal you can `xattr -cr /path/to/OpenCiv3.app` to enable running it.
+  - Mac will crash if you hit buttons to start a new game (New Game, Quick Start, Tutorial, or Load Scenario) because it cant find our 'new game' save file we're using as a stand-in for map generation. But you can Load Game and load `c7-static-map-save.json` or open a Civ3 SAV file to open that map
+- Other specific bugs will be tracked on the [GitHub issues page.](https://github.com/C7-Game/Prototype/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
+
+> [!NOTE]
+> © The OpenCiv3 Project 2021-2025. OpenCiv3 is free and open source software released under the [MIT License](https://opensource.org/license/mit).
