@@ -17,7 +17,7 @@ date:   2025-01-04 18:25:00 -0800
 
 > [!NOTE]
 > OpenCiv3 is not affiliated with civfanatics.com,
-> Firaxis Games, Infogrames Interactive,
+> Firaxis Games, BreakAway Games, Hasbro Interactive, Infogrames Interactive,
 > Atari Interactive, or Take-Two Interactive Software.
 > All trademarks are property of their respective owners.
 
@@ -85,4 +85,4 @@ This is a universal 64-bit executable, so it should run on both Intel and M1 Mac
 - Other specific bugs will be tracked on the [GitHub issues page.](https://github.com/C7-Game/Prototype/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
 
 > [!NOTE]
-> © The OpenCiv3 Project 2021-2025. OpenCiv3 is free and open source software released under the [MIT License](https://opensource.org/license/mit).
+> © OpenCiv3 contributors. OpenCiv3 is free and open source software released under the [MIT License](https://opensource.org/license/mit).
