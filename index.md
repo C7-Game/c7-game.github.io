@@ -3,17 +3,19 @@ layout: page
 title:  OpenCiv3 | Home
 date:   2025-01-04 18:25:00 -0800
 ---
-# About OpenCiv3
+![OpenCiv3](title.png)
 
-**OpenCiv3** (formerly known by the codename "C7") is an open-source, mod-oriented remake of _Civilization III_ by the fan community built with Godot and C#, with capabilities inspired by other 4X games and lessons learned in Civ3 modding. We aim to create a new game that looks and plays like Civ3 but incorporates features from the best of the genre and our own dreams.
+# OpenCiv3
+
+**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented remake of _Civilization III_ by the fan community built with Godot and C#, with capabilities inspired by other 4X games and lessons learned in Civ3 modding. We aim to create a new game that looks and plays like Civ3 but incorporates features from the best of the genre and our own dreams.
 
 ***OpenCiv3 is under active development and currently in an early pre-alpha state.*** It is a rudimentary playable game but lacking many mechanics and late-game content, and errors are likely. Keep up with our development for the latest updates and opportunities to contribute!
 
 ## Connect with the community
 
-- [CivFanatics subforum](https://forums.civfanatics.com/forums/civ3-future-development.604/)
-- [Discord](https://discord.gg/uwxUuWhM89)
-- [GitHub](https://github.com/C7-Game/Prototype)
+- **[CivFanatics subforum](https://forums.civfanatics.com/forums/civ3-future-development.604/)**
+- **[Discord](https://discord.gg/uwxUuWhM89)**
+- **[GitHub](https://github.com/C7-Game/Prototype)**
 
 > [!NOTE]
 > OpenCiv3 is not affiliated with civfanatics.com,
@@ -23,13 +25,18 @@ date:   2025-01-04 18:25:00 -0800
 
 # Get OpenCiv3 "Dutch"
 
-## November 2025: v0.3 Dutch Preview 1 Has Been Released!
+## December 2025: v0.3 Dutch Preview 1 Has Been Released!
 
-The OpenCiv3 team is pleased to announce the first preview release of the v0.3 "Dutch" milestone.  This is a major enhancement over the "Carthage" release, and our debut with standalone mode featuring placeholder graphics without the need for Civ3 media files. A local installation of Civ3 is still recommended for a more polished experience.
+The OpenCiv3 team is pleased to announce the first preview release of the v0.3 "Dutch" milestone.  This is a major enhancement over the "Carthage" release, and our debut with standalone mode featuring placeholder graphics without the need for Civ3 media files. A local installation of Civ3 is still recommended for a more polished experience. See the [release notes](https://github.com/C7-Game/Prototype/releases/) for a full list of new features in each version.
+
+
+<img src="Dutch_standalone.png" alt="OpenCiv3 Dutch standalone mode" width="576" height="384">  <img src="Dutch_imported.png" alt="OpenCiv3 Dutch Civ3 mode" width="576" height="384">
+
+_OpenCiv3 Dutch Preview 1 with the same game in Standalone mode (left) and with imported Civ3 graphics (right)_
 
 ## Download
 
-Download the appropriate zip file for your OS from [the Dutch Preview 1 release](https://github.com/C7-Game/Prototype/releases/tag/v0.3-dutch-preview-1)
+Download the appropriate zip file for your OS from **[the Dutch Preview 1 release](https://github.com/C7-Game/Prototype/releases/tag/v0.3-dutch-preview-1)**
 
 All official releases of OpenCiv3 along with more detailed release notes can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
 
