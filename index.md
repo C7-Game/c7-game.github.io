@@ -7,9 +7,11 @@ date:   2025-01-04 18:25:00 -0800
 
 # OpenCiv3
 
-**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented remake of _Civilization III_ by the fan community built with Godot and C#, with capabilities inspired by other 4X games and lessons learned in Civ3 modding. We aim to create a new game that looks and plays like Civ3 but incorporates features from the best of the genre and our own dreams.
+**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented, modernized reimagining of _Civilization III_ by the fan community built with the Godot Engine and C#, with capabilities inspired by the best of the 4X genre and lessons learned from modding Civ3. Our vision is to make Civ3 as it could have been, rebuilt for today's modders and players: removing arbitary limits, fixing broken features, expanding mod capabilities, and supporting modern graphics and platforms. A game that can go beyond C3C but retain all of its gameplay and content.
 
 ***OpenCiv3 is under active development and currently in an early pre-alpha state.*** It is a rudimentary playable game but lacking many mechanics and late-game content, and errors are likely. Keep up with our development for the latest updates and opportunities to contribute!
+
+### [New Players Start Here: An Introduction to OpenCiv3 at CivFanatics](https://forums.civfanatics.com/threads/welcome-to-openciv3-new-players-start-here.674451/)
 
 ## Connect with the community
 
@@ -17,7 +19,7 @@ date:   2025-01-04 18:25:00 -0800
 - **[Discord](https://discord.gg/uwxUuWhM89)**
 - **[GitHub](https://github.com/C7-Game/Prototype)**
 
-> [!NOTE]
+> NOTE:
 > OpenCiv3 is not affiliated with civfanatics.com,
 > Firaxis Games, BreakAway Games, Hasbro Interactive, Infogrames Interactive,
 > Atari Interactive, or Take-Two Interactive Software.
@@ -30,9 +32,10 @@ date:   2025-01-04 18:25:00 -0800
 The OpenCiv3 team is pleased to announce the first preview release of the v0.3 "Dutch" milestone.  This is a major enhancement over the "Carthage" release, and our debut with standalone mode featuring placeholder graphics without the need for Civ3 media files. A local installation of Civ3 is still recommended for a more polished experience. See the [release notes](https://github.com/C7-Game/Prototype/releases/) for a full list of new features in each version.
 
 
-<img src="Dutch_standalone.png" alt="OpenCiv3 Dutch standalone mode" width="576" height="384">  <img src="Dutch_imported.png" alt="OpenCiv3 Dutch Civ3 mode" width="576" height="384">
+<img src="Dutch_standalone.png" alt="OpenCiv3 Dutch standalone mode" width="576" height="384"> 
+<img src="Dutch_imported.png" alt="OpenCiv3 Dutch Civ3 mode" width="576" height="384">
 
-_OpenCiv3 Dutch Preview 1 with the same game in Standalone mode (left) and with imported Civ3 graphics (right)_
+_OpenCiv3 Dutch Preview 1 with the same game in Standalone mode (top) and with imported Civ3 graphics (bottom)_
 
 ## Download
 
@@ -91,5 +94,4 @@ This is a universal 64-bit executable, so it should run on both Intel and M1 Mac
   - Mac will crash if you hit buttons to start a new game (New Game, Quick Start, Tutorial, or Load Scenario) because it cant find our 'new game' save file we're using as a stand-in for map generation. But you can Load Game and load `c7-static-map-save.json` or open a Civ3 SAV file to open that map
 - Other specific bugs will be tracked on the [GitHub issues page.](https://github.com/C7-Game/Prototype/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
 
-> [!NOTE]
 > © OpenCiv3 contributors. OpenCiv3 is free and open source software released under the [MIT License](https://opensource.org/license/mit).
