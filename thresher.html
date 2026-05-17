@@ -1,18 +1,41 @@
-<!DOCTYPE html>
-<html>
-<header>
-<title>Thresher: Get seed data from Civ3 saves</title>
-</header>
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get seeds and world settings from Civilization III saves right in your browser">
+    <title>Thresher: Get seed data from Civ3 saves</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 <body>
-<h2>Thresher: a brute force tool for beating seeds out</h2>
-<p>Select a Civ3 save file below to view the seed and world settings.
-<p>NOTE: currently only uncompressed saves (typically, autosaves) are supported.
-<div><input type="file" id="fileInput" /></div>
-<div class="output">
-<p>Seed: <span id="seed"/>
-<p>Settings: <span id="size"></span> <span id="coverage"></span> <span id="landmass"></span> <span id="climate"></span> <span id="temp"></span> <span id="age"></span>
-</div>
-<p>Credit to Jim Nelson for demonstrating this feature in <a href="https://github.com/JimOfLeisure/c3sat">c3sat</a>. I simply ported the seed extraction logic to JavaScript.
+    <main>
+        <div class="container py-4">
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                
+        <h1 class="display-5 fw-bold">Thresher: a brute force tool for beating seeds out</h1>
+        <p class="col-md-8 fs-4">Open a Civ3 save file to view its seed and world settings.</p>
+
+        <div class="input-group">
+          <input type="file" class="form-control" id="fileInput" aria-label="Choose a save">
+        </div>
+        <p class="col-md-8 fs-5">NOTE: currently only uncompressed saves (typically, autosaves) are supported.</p>
+        <hr>
+        <div class="output">
+            <p class="fs-4">Seed: <span id="seed"/>
+            <p class="fs-4">Settings: <span id="size"></span> <span id="coverage"></span> <span id="landmass"></span> <span id="climate"></span> <span id="temp"></span> <span id="age"></span>
+        </div>
+        
+        <p class="fs-6">Credit to Jim Nelson for demonstrating this feature in <a href="https://github.com/JimOfLeisure/c3sat">c3sat</a>. I simply ported the seed extraction logic to JavaScript.
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 <script>
 const input = document.getElementById('fileInput');
 const output = document.querySelector('.output');
