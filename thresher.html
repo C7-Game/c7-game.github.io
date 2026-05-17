@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Thresher: Get seed data from Civ3 saves</title>
+</header>
+<body>
+<h2>Thresher: a brute force tool for beating seeds out</h2>
+<p>Select a Civ3 save file below to view the seed and world settings.
+<p>NOTE: currently only uncompressed saves (typically, autosaves) are supported.
+<div><input type="file" id="fileInput" /></div>
+<div class="output">
+<p>Seed: <span id="seed"/>
+<p>Settings: <span id="size"></span> <span id="coverage"></span> <span id="landmass"></span> <span id="climate"></span> <span id="temp"></span> <span id="age"></span>
+</div>
+<p>Credit to Jim Nelson for demonstrating this feature in <a href="https://github.com/JimOfLeisure/c3sat">c3sat</a>. I simply ported the seed extraction logic to JavaScript.
+<script>
+const input = document.getElementById('fileInput');
+const output = document.querySelector('.output');
+
+function firstOffsetOfSequence(data, seq) {
+    return new Promise(function(resolve, reject) {
+        let len_data = data.length;
+        let len_seq = seq.length;
+        for (let data_idx = 0, seq_idx = 0; data_idx < len_data - len_seq; data_idx++) {
+            //console.log("Looking for byte " + seq[seq_idx])
+            if (data[data_idx] === seq[seq_idx++]) {
+                //console.log("Found byte " + seq[seq_idx] + " at position " + data_idx)
+                if (seq_idx >= len_seq) {
+                    resolve(++data_idx);
+                }
+            } else seq_idx = 0
+        }
+        console.log("reached end of file");
+        throw "No instance found";
+    });
+}
+
+const sizes = {
+	0: "Tiny",
+	1: "Small",
+	2: "Standard",
+	3: "Large",
+	4: "Huge"
+}
+const landmasses = {
+	0: "Archipelago",
+	1: "Continents",
+	2: "Pangaea"
+}
+const coverages = {
+	0: "80%",
+	1: "70%",
+	2: "60%"
+}
+const climates = {
+	0: "Arid",
+	1: "Normal",
+	2: "Wet"
+}
+const temps = {
+	0: "Cool",
+	1: "Temperate",
+	2: "Warm"
+}
+const ages = {
+	0: "3 Billion",
+	1: "4 Billion",
+	2: "5 Billion"
+}
+
+input.addEventListener('change', (event) => {
+    const file = event.target.files[0]; // Get the first file
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+    	const data = new Uint8Array(e.target.result)
+    	// find first occurence of WRLD (0x57524c44)
+    	firstOffsetOfSequence(data, Uint8Array.fromHex("57524c44"))
+    		.then(function(result) {
+    			console.log("Found WRLD section at offset " + result)
+    			
+    			const seed = new DataView(data.buffer, result + 170, 4).getUint32(0, true)
+    			console.log("Got seed value: " + seed)
+    			output.querySelector("#seed").textContent = seed
+    			
+    			const world_size = data[result + 234]
+    			console.log("Got size value: " + world_size)
+    			output.querySelector("#size").textContent = sizes[world_size]
+    			
+    			const world_landmass = data[result + 206]
+    			console.log("Got landmass value: " + world_landmass)
+    			output.querySelector("#landmass").textContent = landmasses[world_landmass]
+    			
+    			const world_coverage = data[result + 214]
+    			console.log("Got coverage value: " + world_coverage)
+    			output.querySelector("#coverage").textContent = coverages[world_coverage]
+    			
+    			const world_climate = data[result + 190]
+    			console.log("Got climate value: " + world_climate)
+    			output.querySelector("#climate").textContent = climates[world_climate]
+    			
+    			const world_temp = data[result + 222]
+    			console.log("Got temp value: " + world_temp)
+    			output.querySelector("#temp").textContent = temps[world_temp]
+    			
+    			const world_age = data[result + 230]
+    			console.log("Got age value: " + world_age)
+    			output.querySelector("#age").textContent = ages[world_age]
+    		}).catch(function() {
+    			//output.textContent = data.toString()    		
+    		})
+    };
+
+    // decompress? how to check? see csat code
+    reader.readAsArrayBuffer(file); // Read the file as text
+});
+</script>
+</body>
+</html>
