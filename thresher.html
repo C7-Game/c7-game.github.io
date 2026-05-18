@@ -23,6 +23,7 @@
         <p class="col-md-8 fs-5">NOTE: currently only uncompressed saves (typically, autosaves) are supported.</p>
         <hr>
         <div class="output">
+            <p class="fs-4" id="error"></p>
             <p class="fs-4">Seed: <span id="seed"/>
             <p class="fs-4">Settings: <span id="size"></span> <span id="coverage"></span> <span id="landmass"></span> <span id="climate"></span> <span id="temp"></span> <span id="age"></span>
         </div>
@@ -56,6 +57,17 @@ function firstOffsetOfSequence(data, seq) {
         console.log("reached end of file");
         throw "No instance found";
     });
+}
+
+function resetForm() {
+	output.querySelector("#error").textContent = ""
+	output.querySelector("#seed").textContent = ""
+	output.querySelector("#size").textContent = ""
+	output.querySelector("#landmass").textContent = ""
+	output.querySelector("#coverage").textContent = ""
+	output.querySelector("#climate").textContent = ""
+	output.querySelector("#temp").textContent = ""
+	output.querySelector("#age").textContent = ""
 }
 
 const sizes = {
@@ -96,6 +108,7 @@ input.addEventListener('change', (event) => {
     const reader = new FileReader();
 
     reader.onload = function(e) {
+    	resetForm()
     	const data = new Uint8Array(e.target.result)
     	// find first occurence of WRLD (0x57524c44)
     	firstOffsetOfSequence(data, Uint8Array.fromHex("57524c44"))
@@ -130,7 +143,7 @@ input.addEventListener('change', (event) => {
     			console.log("Got age value: " + world_age)
     			output.querySelector("#age").textContent = ages[world_age]
     		}).catch(function() {
-    			//output.textContent = data.toString()    		
+    			output.querySelector("#error").textContent = "Unable to find seed data. Check that this is an uncompressed Civilization III save file (.SAV)"
     		})
     };
 
