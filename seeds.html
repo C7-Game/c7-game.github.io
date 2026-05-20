@@ -9,27 +9,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OpenCiv3</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <main>
         <div class="container py-4">
             <div class="p-5 mb-4 bg-body-tertiary rounded-3">
                 <div class="container-fluid py-5">
                 
-        <h1 class="display-5 fw-bold">Thresher: a brute force tool for beating seeds out</h1>
-        <p class="col-md-8 fs-4">Open a Civ3 save file to view its seed and world settings.</p>
+        <h1 class="fw-bold">Thresher</h1>
+        <h3 class="fst-italic">a brute force tool for beating seeds out</h3>
+        <p class="col-md-8 fs-5">Open a Civ3 save file to view its seed and world settings.</p>
 
-        <div class="input-group">
-          <input type="file" class="form-control" id="fileInput" aria-label="Choose a save">
+        <div class="col-md-8">
+          <input type="file" class="form-control form-control-lg" id="fileInput" aria-label="Choose a save">
         </div>
-        <p class="col-md-8 fs-5">NOTE: currently only uncompressed saves (typically, autosaves) are supported.</p>
+        <div class="alert alert-warning col-md-8" role="alert">NOTE: currently only uncompressed saves (typically, autosaves) are supported.</div>
         <hr>
         <div class="output">
             <p class="fs-4" id="error"></p>
-            <p class="fs-4">Seed: <span id="seed"/>
-            <p class="fs-4">Settings: <span id="size"></span> <span id="coverage"></span> <span id="landmass"></span> <span id="climate"></span> <span id="temp"></span> <span id="age"></span>
+            <p class="fs-4">Seed: <span class="user-select-all" id="seed"/>
+            <p class="fs-4">Settings: <span class="user-select-all"><span id="size"></span> <span id="coverage"></span> <span id="landmass"></span> <span id="climate"></span> <span id="temp"></span> <span id="age"></span></span>
         </div>
         
-        <p class="fs-6">Credit to Jim Nelson for demonstrating this feature in <a href="https://github.com/JimOfLeisure/c3sat">c3sat</a>. I simply ported the seed extraction logic to JavaScript.
-
+        <p class="fs-6">Credit to Jim Nelson for demonstrating this feature in <a href="https://github.com/JimOfLeisure/c3sat">c3sat</a>. I simply ported the seed extraction logic to JavaScript.</p>
+        <p class="fs-6">Report an issue with this tool in our <a href="https://discord.gg/uwxUuWhM89">Discord server</a></p>
                 </div>
             </div>
         </div>
