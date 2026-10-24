@@ -7,9 +7,9 @@ date:   2025-01-04 18:25:00 -0800
 
 # OpenCiv3
 
-**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented, modernized reimagining of _Civilization III_ by the fan community built with the Godot Engine and C#, with capabilities inspired by the best of the 4X genre and lessons learned from modding Civ3. Our vision is to make Civ3 as it could have been, rebuilt for today's modders and players: removing arbitary limits, fixing broken features, expanding mod capabilities, and supporting modern graphics and platforms. A game that can go beyond C3C but retain all of its gameplay and content.
+**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented, modernized reimagining of _Civilization III_ by the fan community. Built with the Godot Engine and C#, it has capabilities inspired by the best of the 4X genre and lessons learned from modding Civ3. Our vision is to make Civ3 as it could have been, rebuilt for today's modders and players: removing arbitary limits, fixing broken features, expanding mod capabilities, and supporting modern graphics and platforms. A game that can go beyond C3C but retain all of its gameplay and content.
 
-***OpenCiv3 is under active development and currently in an early pre-alpha state.*** It is a rudimentary playable game but lacking many mechanics and late-game content, and errors are likely. Keep up with our development for the latest updates and opportunities to contribute!
+***OpenCiv3 is under active development and currently in a pre-alpha state.*** It is a rudimentary playable game but lacking many mechanics and late-game content, and errors are likely. Keep up with our development for the latest updates and opportunities to contribute!
 
 ### [New Players Start Here: An Introduction to OpenCiv3 at CivFanatics](https://forums.civfanatics.com/threads/welcome-to-openciv3-new-players-start-here.674451/)
 
@@ -19,11 +19,14 @@ date:   2025-01-04 18:25:00 -0800
 - **[Discord](https://discord.gg/uwxUuWhM89)**
 - **[GitHub](https://github.com/C7-Game/Prototype)**
 
-> NOTE:
-> OpenCiv3 is not affiliated with civfanatics.com,
-> Firaxis Games, BreakAway Games, Hasbro Interactive, Infogrames Interactive,
-> Atari Interactive, or Take-Two Interactive Software.
-> All trademarks are property of their respective owners.
+> NOTE:  
+> OpenCiv3 Copyright (c) OpenCiv3 contributors  
+> 
+> All content is the property of the respective authors. For more information regarding the authorship of content, see the applicable source repository logs and/or credits files in the respective directories.  
+> 
+> OpenCiv3 seeks to be a mechanically compatible black-box reimplementation of _Civilization III_. No part or product of _Civilization III_ ships with OpenCiv3. OpenCiv3 reimplements _Civilization III_ gameplay using original code and media produced by the community, based on publicly available information and observations. OpenCiv3 provides the option to load media from the player's own locally installed copy of _Civilization III_ for a more faithful experience.  
+> 
+> OpenCiv3 is not affiliated with or endorsed by civfanatics.com, Firaxis Games, BreakAway Games, Hasbro Interactive, Infogrames Interactive, Atari Interactive, or Take-Two Interactive Software. CIV and CIVILIZATION are registered trademarks of Take-Two Interactive Software, Inc. All trademarks are property of their respective owners.  
 
 # Get OpenCiv3 "Dutch"
 
