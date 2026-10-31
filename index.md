@@ -7,7 +7,7 @@ date:   2025-01-04 18:25:00 -0800
 
 # OpenCiv3
 
-**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented, modernized reimagining of _Civilization III Conquests_ by the fan community. Built with the Godot Engine and C#, it has capabilities inspired by the best of the 4X genre and lessons learned from modding Civ3. Our vision is to make Civ3 as it could have been, rebuilt for today's modders and players: removing arbitary limits, fixing broken features, expanding mod capabilities, and supporting modern graphics and platforms. A game that can go beyond Civ3 but retain all of its gameplay and content.
+**OpenCiv3** (formerly known by the codename "C7") is an open-source, cross-platform, mod-oriented, modernized reimagining of _Civilization III Conquests_ by the fan community. Built with the Godot Engine and C#, it has capabilities inspired by the best of the 4X genre and lessons learned from modding Civ III. Our vision is to make Civ III as it could have been, rebuilt for today's modders and players: removing arbitary limits, fixing broken features, expanding mod capabilities, and supporting modern graphics and platforms. A game that can go beyond Civ III but retain all of its gameplay and content.
 
 [**Jump to Download**](#download)
 
@@ -32,8 +32,9 @@ date:   2025-01-04 18:25:00 -0800
 
 # October 2026: OpenCiv3 v0.3 Dutch 2 Has Been Released!
 
-The OpenCiv3 team is pleased to announce the second release of the v0.3 "Dutch" milestone.  This is a significant enhancement over the first "Dutch Preview 1" release, introducing many new features including the ability to win the game! A local installation of Civ3 is still recommended for a more polished experience. See the [release announcement at CivFanatics](https://forums.civfanatics.com/threads/release-openciv3-dutch-2-now-available.705287/) for the full list of new features.
+The OpenCiv3 team is pleased to announce the second release of the v0.3 "Dutch" milestone.  This is a significant enhancement over the first "Dutch Preview 1" release, introducing many new features including the ability to win the game! Conquest and Domination victory types are available. Other highlights include our new title screen music in standalone mode; a greatly improved domestic advisor; expanded game setup options; and the introduction of unit bombardment, transport, and promotion mechanics. A local installation of _Civilization III_ is still recommended for a more polished experience.
 
+See the [release announcement at CivFanatics](https://forums.civfanatics.com/threads/release-openciv3-dutch-2-now-available.705287/) for the full list of new features.
 
 <img src="images/Dutch2.png" alt="OpenCiv3 Dutch 2" width="auto" height="auto">
 
@@ -73,7 +74,7 @@ This is a Windows 64-bit executable. OpenCiv3 will look for a local installation
 This is an x86-64 Linux executable. You may use an environment variable to point to the files from a _Civilization III_ installation. You can just copy or mount the top-level "Sid Meier's Civilization III Complete" (Sans "Complete" if your install was from pre-Complete CDs) folder and its contents to your Linux system, or install the game via Steam or GOG.
 
 - Download and extract the tgz file
-- Set the `CIV3_HOME` environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
+- Set the `CIV3_HOME` environment variable to point to the Civ III files, e.g. `export CIV3_HOME="/path/to/civ3"`
 - From that same terminal where you set `CIV3_HOME`, run `OpenCiv3.x86_64`
 - To make this variable permanent, add it to your `.profile` or equivalent.
 
@@ -85,25 +86,27 @@ This is a universal 64-bit executable, so it should run on both Intel and M1 Mac
 - Double click the zip file, and a folder including `OpenCiv3.app` and others will appear
 - If you try to open `OpenCiv3.app` it will tell you it's damaged and try to trash it; it is not damaged
 - To unblock the downloaded app, from a terminal run `xattr -cr /path/to/OpenCiv3.app`; you can avoid typing the path out by typing `xattr -cr ` and then dragging the `OpenCiv3.app` icon onto the terminal window
-- Set the `CIV3_HOME` environment variable to point to the Civ3 files, e.g. `export CIV3_HOME="/path/to/civ3"`
+- Set the `CIV3_HOME` environment variable to point to the Civ III files, e.g. `export CIV3_HOME="/path/to/civ3"`
 - From that same terminal where you set `CIV3_HOME`, run `OpenCiv3.app` with `open /path/to/OpenCiv3.app`, or again just type `open ` and drag the OpenCiv3 icon onto the terminal window and press enter
+- [See the wiki for more guidance](https://github.com/C7-Game/OpenCiv3/wiki/MacOS-Support#openciv3)
 
 ## Troubleshooting and Known Issues
 
 Compatibility
 
 - OpenCiv3 uses many primitive placeholder assets; loading files from a local _Civilization III_ install is recommended (see platform specific setup instructions above)
-- Support for playing Civ3 BIQ or SAV files is incomplete; some files will not load correctly and crashes may occur
+- Support for playing Civ III BIQ or SAV files is incomplete; some files will not load correctly and crashes may occur
 - Likewise support for OpenCiv3 JSON files (rules and saves) is not yet stable across different versions and they may or may not be reusable.
 - The Palace view is not yet supported in standalone mode; it opens an invisible overlay that can be closed by pressing Esc.
 
 Game config and logging:
-- By default OpenCiv3 expects the general config file `C7.ini` and main log file `log.txt` to exist in the same directory as the game itself and be writable. It is recommended to install the game to a writable location such as under your user home directory. If the game folder is NOT writable, **settings and logs are stored in a per-user Godot data folder instead.** Resolved paths and Civ3 install detection is now saved in `log.txt`, so it’s easier to troubleshoot if the game can’t find your Civ3 files. [See here for more details on user data folder locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html#accessing-persistent-user-data-user)
-- If you need to set or change the location of Civ3 later, or something goes very wrong and the game cannot launch, delete `C7.ini` and restart the game.
+- By default OpenCiv3 expects the general config file `C7.ini` and main log file `log.txt` to exist in the same directory as the game itself and be writable. It is recommended to install the game to a writable location such as under your user home directory. If the game folder is NOT writable, **settings and logs are stored in a per-user Godot data folder instead.** Resolved paths and Civ III install detection is now saved in `log.txt`, so it’s easier to troubleshoot if the game can’t find your Civ III files. [See here for more details on user data folder locations.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html#accessing-persistent-user-data-user)
+- If you need to set or change the location of Civ III later, or something goes very wrong and the game cannot launch, delete `C7.ini` and restart the game.
 - If you encounter a crash, an error dialog for a reason not listed here, or other major problem that you cannot troubleshoot, find `log.txt` as described above and submit it to us in a GitHub issue or on Discord.
 
 Mac:
   - Mac will try hard not to let you run this; it will tell you the app is damaged and can't be opened and ask to move it to Trash. From a terminal you can run `xattr -cr /path/to/OpenCiv3.app` to enable running it.
+  - [See the wiki for more guidance](https://github.com/C7-Game/OpenCiv3/wiki/MacOS-Support#openciv3)
   
 **Other specific bugs will be tracked on the [GitHub issues page.](https://github.com/C7-Game/Prototype/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)**
 
