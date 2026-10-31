@@ -30,7 +30,7 @@ date:   2025-01-04 18:25:00 -0800
 
 # October 2026: OpenCiv3 v0.3 Dutch 2 Has Been Released!
 
-The OpenCiv3 team is pleased to announce the second release of the v0.3 "Dutch" milestone.  This is a significant enhancement over the first "Dutch Preview 1" release, introducing many new features including the ability to win the game! A local installation of Civ3 is still recommended for a more polished experience. See the [release announcement at CivFanatics](CFC RELEASE THREAD HERE) for the full list of new features.
+The OpenCiv3 team is pleased to announce the second release of the v0.3 "Dutch" milestone.  This is a significant enhancement over the first "Dutch Preview 1" release, introducing many new features including the ability to win the game! A local installation of Civ3 is still recommended for a more polished experience. See the [release announcement at CivFanatics](https://forums.civfanatics.com/threads/release-openciv3-dutch-2-now-available.705287/) for the full list of new features.
 
 
 <img src="images/Dutch2.png" alt="OpenCiv3 Dutch 2" width="auto" height="auto">
@@ -39,7 +39,7 @@ _OpenCiv3 Dutch 2 in standalone mode showing victory status_
 
 ## Download
 
-Download the appropriate zip file for your OS from **[the Dutch 2 release](https://github.com/C7-Game/Prototype/releases/tag/v0.3-dutch-2)**
+Download the appropriate zip file for your OS from **[the Dutch 2 release](https://github.com/C7-Game/OpenCiv3/releases/tag/v0.3-dutch-2)**
 
 All official releases of OpenCiv3 along with more detailed release notes can be found on the [GitHub releases page.](https://github.com/C7-Game/Prototype/releases/)
 
@@ -48,7 +48,8 @@ All official releases of OpenCiv3 along with more detailed release notes can be 
 ### System Requirements
 
 - 64-bit Windows, Linux, or Mac OS. Other platforms may be supported in future releases.
-- Minimum hardware requirements have not yet been identified. Please let us know if OpenCiv3 does not perform well on your system.
+- Minimum hardware requirements have not yet been identified. Refer to [Godot's system requirements](https://docs.godotengine.org/en/stable/about/system_requirements.html#exported-godot-project) as a baseline. Please let us know if OpenCiv3 does not perform well on your system, or how it does on a particularly old system.
+- Currently the OpenCiv3 installation is about 200-300 Mb but this is expected to increase significantly as we add media.
 - Recommended: A locally installed copy (the game itself does NOT have to run) of _Civilization III Conquests_ or _Complete_ edition. Standalone mode is available with placeholder graphics for those who do not have a copy.
   - _Civilization III Complete_ is available for a pittance from [Steam](https://store.steampowered.com/app/3910/Sid_Meiers_Civilization_III_Complete/) or [GOG](https://www.gog.com/en/game/sid_meiers_civilization_iii_complete)
 
